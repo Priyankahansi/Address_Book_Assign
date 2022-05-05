@@ -78,6 +78,13 @@ public class AddressBook {
         this.email = email;
     }
 
+    public String toString() {
+
+        return "Contact [FirstName=" + firstName + ", LastName=" + lastName + ", Address=" + address + ", " +
+                "City=" + city + ", State=" + state + ", ZipCode=" + zipCode + ", PhoneNumber=" + phoneNumber + ", " +
+                "Email=" + email + "]";
+    }
+
     public static void main(String[] args) {
         AddressBook obj = new AddressBook();
         obj.setFirstName("Praju");
@@ -96,6 +103,7 @@ public class AddressBook {
         System.out.println(obj.city);
         System.out.println(obj.getState());
         System.out.println(obj.getZipCode());
+        obj.toString();
     }
 }
 
